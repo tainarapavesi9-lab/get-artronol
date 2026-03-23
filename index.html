@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     
-    <title>Artronol Official | Recupere o Conforto nos seus Movimentos</title>
-    <meta name="description" content="Descubra Artronol. Uma forma simples de aliviar o desconforto articular no dia a dia. Ajuda na mobilidade e rigidez." />
+    <!-- ========================= -->
+    <!-- SEO & GOOGLE ADS COMPLIANCE 2026 -->
+    <!-- ========================= -->
+    <title>Artronol Official | Suporte Articular & Mobilidade Diária</title>
+    <meta name="description" content="Artronol é um suplemento alimentar focado no conforto articular. Ajuda a reduzir a rigidez e apoia a mobilidade diária com uma fórmula natural." />
     <meta name="robots" content="index, follow" />
 
-    <!-- TRACKING SCRIPT -->
+    <!-- Rastreamento (Ornyxa) -->
     <script src="https://api.ornyxa.com/code/8300-bb0092d1-e81e-4f78-9d27-df22b3a134f8"></script>
 
     <!-- FAVICON -->
@@ -56,7 +59,6 @@
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
         
-        /* Card de Seleção estilo Telemóvel */
         .device-card {
             background: white;
             border-radius: 2rem;
@@ -69,7 +71,7 @@
 
         .destination-btn {
             position: relative;
-            height: 90px;
+            height: 95px;
             border-radius: 1rem;
             display: flex;
             align-items: center;
@@ -82,19 +84,16 @@
         .destination-btn.pt { background-color: #e35a3a; }
         .destination-btn.es { background-color: #f04c1e; }
         
-        .destination-btn:hover { transform: translateY(-2px); filter: brightness(1.05); }
+        .destination-btn:hover { transform: translateY(-3px); filter: brightness(1.05); }
 
         .flag-small {
-            width: 48px;
+            width: 44px;
             height: auto;
             border-radius: 4px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
 
-        /* Accordion FAQ */
-        .faq-accordion-item {
-            border-bottom: 1px solid #f1f5f9;
-        }
+        .faq-accordion-item { border-bottom: 1px solid #f1f5f9; }
         .faq-trigger {
             width: 100%;
             display: flex;
@@ -110,18 +109,9 @@
             color: #64748b;
             font-size: 0.95rem;
         }
-        .faq-accordion-item.active .faq-content {
-            max-height: 200px;
-            padding-bottom: 1.25rem;
-        }
-        .faq-accordion-item.active .faq-icon {
-            transform: rotate(180deg);
-        }
-        .faq-icon {
-            transition: transform 0.3s;
-            color: var(--brand-main);
-            width: 18px;
-        }
+        .faq-accordion-item.active .faq-content { max-height: 200px; padding-bottom: 1.25rem; }
+        .faq-accordion-item.active .faq-icon { transform: rotate(180deg); }
+        .faq-icon { transition: transform 0.3s; color: var(--brand-main); width: 18px; }
 
         .price-row {
             background-color: #f8fafc;
@@ -132,6 +122,14 @@
             justify-content: space-between;
             border: 1px solid #edf2f7;
         }
+
+        .nav-link {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.9);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -139,10 +137,12 @@
     <!-- Header -->
     <header class="brand-header py-4 px-6 md:px-12 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <img src="images/imgi_1_logofix.png" alt="Artronol Logo" class="h-7 md:h-8 w-auto brightness-0 invert">
+            <div class="flex items-center gap-4">
+                <img src="images/imgi_1_logofix.png" alt="Artronol Logo" class="h-7 md:h-8 w-auto brightness-0 invert">
+                <span class="hidden md:block bg-white/20 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">Suplemento Alimentar</span>
+            </div>
             <nav class="hidden lg:flex items-center gap-8">
                 <a href="#order" class="nav-link" data-i18n="nav1">Início</a>
-                <a href="#about" class="nav-link" data-i18n="nav2">Sobre</a>
                 <a href="#faq" class="nav-link" data-i18n="nav3">Dúvidas</a>
                 <a href="#order" class="bg-white text-[#44B4C1] px-5 py-2 rounded-lg text-[11px] font-black uppercase tracking-widest shadow-md hover:scale-105 transition-transform" data-i18n="order_btn">PEDIR AGORA</a>
             </nav>
@@ -159,17 +159,21 @@
                 <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                     
                     <div class="reveal active text-center lg:text-left">
-                        <h1 data-i18n="headline" class="text-3xl md:text-5xl lg:text-6xl font-black mb-6 leading-[1.1] text-slate-800">
+                        <div class="inline-flex items-center gap-2 bg-[#44B4C1]/10 text-[#44B4C1] px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-6">
+                            <i data-feather="info" class="w-3 h-3"></i> 
+                            Suporte Articular Natural
+                        </div>
+                        <h1 data-i18n="headline" class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-[1.1] text-slate-800">
                             Recupere O Conforto Nos Seus Movimentos — Sem Complicações
                         </h1>
                         <p data-i18n="subheadline" class="text-md md:text-lg text-slate-600 mb-8 font-medium">
-                            Se as suas articulações já não respondem como antes, esta pode ser uma forma simples de aliviar o desconforto no dia a dia.
+                            Se as suas articulações já não respondem como antes, <strong>Artronol</strong> é a forma simples de apoiar a sua mobilidade diária.
                         </p>
                         
                         <div class="space-y-3 mb-10 text-left max-w-md mx-auto lg:mx-0">
                             <div class="flex items-center gap-3">
                                 <i data-feather="check-circle" class="text-[#44B4C1] w-4 h-4 flex-shrink-0"></i>
-                                <p data-i18n="check1" class="text-slate-700 font-bold text-sm">Ajuda a reduzir o desconforto e a rigidez</p>
+                                <p data-i18n="check1" class="text-slate-700 font-bold text-sm">Ajuda a reduzir a sensação de rigidez</p>
                             </div>
                             <div class="flex items-center gap-3">
                                 <i data-feather="check-circle" class="text-[#44B4C1] w-4 h-4 flex-shrink-0"></i>
@@ -177,11 +181,7 @@
                             </div>
                             <div class="flex items-center gap-3">
                                 <i data-feather="check-circle" class="text-[#44B4C1] w-4 h-4 flex-shrink-0"></i>
-                                <p data-i18n="check3" class="text-slate-700 font-bold text-sm">Fórmula com ingredientes selecionados</p>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i data-feather="check-circle" class="text-[#44B4C1] w-4 h-4 flex-shrink-0"></i>
-                                <p data-i18n="check4" class="text-slate-700 font-bold text-sm">Uso simples, integrado na sua rotina</p>
+                                <p data-i18n="check3" class="text-slate-700 font-bold text-sm">Fórmula natural e segura</p>
                             </div>
                         </div>
 
@@ -190,37 +190,35 @@
                         </div>
                     </div>
 
-                    <!-- Card de Destino Ajustado -->
+                    <!-- Card de Seleção -->
                     <div class="reveal active delay-200 flex justify-center lg:justify-end">
                         <div class="device-card">
-                            <p data-i18n="region_label" class="text-center font-black text-slate-400 uppercase tracking-widest text-[9px] mb-4">Escolha o seu país:</p>
+                            <p data-i18n="region_label" class="text-center font-black text-slate-400 uppercase tracking-widest text-[9px] mb-4">Selecione o seu país de residência:</p>
                             
-                            <!-- Botões de Destino com Bandeiras Detalhadas -->
-                            <a href="https://2ou1e.doctorthetran.com/l" class="destination-btn pt group">
+                            <a href="https://2ou1e.doctorthetran.com/l" class="destination-btn pt">
                                 <span class="text-white font-black text-xl tracking-tighter">PORTUGAL</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" class="flag-small" alt="PT">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" class="flag-small" alt="Portugal">
                             </a>
-                            <a href="https://prsvl.doctormvp2.com/l" class="destination-btn es group">
+                            <a href="https://prsvl.doctormvp2.com/l" class="destination-btn es">
                                 <span class="text-white font-black text-xl tracking-tighter">ESPAÑA</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" class="flag-small" alt="ES">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" class="flag-small" alt="Espanha">
                             </a>
 
-                            <!-- Preço alinhado conforme a imagem -->
                             <div class="mt-4">
                                 <div class="price-row">
                                     <div class="flex flex-col">
-                                        <span class="text-[9px] text-slate-400 font-bold uppercase tracking-tighter" data-i18n="before">Antes: €58</span>
+                                        <span class="text-[9px] text-slate-400 font-bold uppercase" data-i18n="before">Preço base: €58</span>
                                         <span class="text-2xl font-black text-slate-800 tracking-tighter">€29</span>
                                     </div>
-                                    <div class="bg-cyan-100 text-[#44B4C1] px-2 py-1 rounded text-[10px] font-black uppercase" data-i18n="limited">-50% OFF</div>
+                                    <div class="bg-cyan-100 text-[#44B4C1] px-2 py-1 rounded text-[10px] font-black uppercase" data-i18n="limited">Promoção -50%</div>
                                 </div>
                                 
-                                <div class="mt-4 space-y-2">
+                                <div class="mt-4 flex flex-col gap-2">
                                     <div class="flex items-center gap-2 text-[9px] font-bold text-slate-400 uppercase">
-                                        <i data-feather="truck" class="w-3 h-3 text-[#44B4C1]"></i> <span data-i18n="trust1">Pagamento na Entrega</span>
+                                        <i data-feather="truck" class="w-3 h-3 text-[#44B4C1]"></i> Pagamento no ato da entrega
                                     </div>
-                                    <div class="flex items-center gap-2 text-[9px] font-bold text-slate-400 uppercase">
-                                        <i data-feather="shield" class="w-3 h-3 text-[#44B4C1]"></i> <span data-i18n="trust2">Envio Rápido e Seguro</span>
+                                    <div class="flex items-center gap-2 text-[9px] font-bold text-slate-400 uppercase italic">
+                                        *Os resultados podem variar de pessoa para pessoa.
                                     </div>
                                 </div>
                             </div>
@@ -231,7 +229,7 @@
         </section>
 
         <!-- Testemunhos -->
-        <section class="py-16 bg-white">
+        <section class="py-16 bg-white border-y border-slate-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-10">
                     <h2 data-i18n="reviews_title" class="text-2xl md:text-3xl font-black text-slate-800 mb-2">Mais De 50.000 Pessoas Já Testaram</h2>
@@ -245,159 +243,102 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <p data-i18n="rev1_text" class="text-slate-600 italic mb-4 text-sm leading-relaxed">"Comecei a sentir menos rigidez logo nas primeiras semanas. Não é milagre, mas ajudou bastante no meu dia a dia."</p>
-                        <p data-i18n="rev1_author" class="font-black text-slate-800 text-xs">— Carlos, 52 anos</p>
+                        <p class="text-slate-600 italic mb-4 text-sm leading-relaxed">"Sinto menos rigidez ao acordar. É um apoio excelente para quem quer manter-se ativo."</p>
+                        <p class="font-black text-slate-800 text-xs">— Carlos, 52 anos</p>
                     </div>
                     <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <p data-i18n="rev2_text" class="text-slate-600 italic mb-4 text-sm leading-relaxed">"Uso por causa das dores no joelho. Sinto-me mais confortável para caminhar e subir escadas."</p>
-                        <p data-i18n="rev2_author" class="font-black text-slate-800 text-xs">— Ana, 47 anos</p>
+                        <p class="text-slate-600 italic mb-4 text-sm leading-relaxed">"Ajuda-me bastante no conforto diário ao caminhar. Recomendo pela simplicidade."</p>
+                        <p class="font-black text-slate-800 text-xs">— Ana, 47 anos</p>
                     </div>
                     <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <p data-i18n="rev3_text" class="text-slate-600 italic mb-4 text-sm leading-relaxed">"Gostei porque é simples de usar. Aos poucos fui sentindo diferença."</p>
-                        <p data-i18n="rev3_author" class="font-black text-slate-800 text-xs">— Rui, 61 anos</p>
+                        <p class="text-slate-600 italic mb-4 text-sm leading-relaxed">"Integra-se facilmente na rotina. Sinto-me mais solto nas minhas caminhadas diárias."</p>
+                        <p class="font-black text-slate-800 text-xs">— Rui, 61 anos</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Agitação -->
-        <section class="py-16 bg-slate-900 text-white text-center">
-            <div class="container mx-auto px-6 max-w-3xl space-y-5">
-                <h3 data-i18n="q1" class="text-xl md:text-2xl italic opacity-70 font-light">Sente rigidez ao acordar?</h3>
-                <h3 data-i18n="q2" class="text-xl md:text-2xl italic opacity-70 font-light">As dores atrapalham as suas atividades?</h3>
-                <h3 data-i18n="q3" class="text-xl md:text-2xl italic opacity-70 font-light">Evita certos movimentos por desconforto?</h3>
-                <p data-i18n="q_solution" class="text-lg font-bold text-[#44B4C1] pt-4">Não ignore estes sinais. Pequenas mudanças podem melhorar o seu conforto diário.</p>
-            </div>
-        </section>
-
-        <!-- FAQ com Efeito Sanfona -->
-        <section id="faq" class="py-16 bg-white">
+        <!-- FAQ Section (Accordion) -->
+        <section id="faq" class="py-16 bg-slate-50">
             <div class="container mx-auto px-6 max-w-2xl">
                 <h2 data-i18n="faq_title" class="text-3xl font-black text-center mb-10 text-slate-800">Perguntas Frequentes</h2>
-                <div class="space-y-1">
+                <div class="space-y-1 bg-white rounded-2xl p-4 shadow-sm">
                     <div class="faq-accordion-item">
                         <button class="faq-trigger">
-                            <span data-i18n="faqq1" class="font-bold text-slate-700">O Artronol substitui medicamentos?</span>
+                            <span class="font-bold text-slate-700">O Artronol é um medicamento?</span>
                             <i data-feather="chevron-down" class="faq-icon"></i>
                         </button>
                         <div class="faq-content">
-                            <p data-i18n="faqa1">Não. É um suplemento alimentar que pode complementar a sua rotina saudável.</p>
+                            <p>Não. <strong>Artronol</strong> é um suplemento alimentar. Não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença.</p>
                         </div>
                     </div>
                     <div class="faq-accordion-item">
                         <button class="faq-trigger">
-                            <span data-i18n="faqq2" class="font-bold text-slate-700">Em quanto tempo posso notar diferença?</span>
+                            <span class="font-bold text-slate-700">Quando noto os primeiros resultados?</span>
                             <i data-feather="chevron-down" class="faq-icon"></i>
                         </button>
                         <div class="faq-content">
-                            <p data-i18n="faqa2">Os resultados variam entre indivíduos, mas muitos utilizadores relatam melhorias nas primeiras semanas.</p>
+                            <p>Os resultados variam. Muitos utilizadores reportam uma sensação de maior conforto após as primeiras semanas de uso contínuo de <strong>Artronol</strong>.</p>
                         </div>
                     </div>
                     <div class="faq-accordion-item">
                         <button class="faq-trigger">
-                            <span data-i18n="faqq3" class="font-bold text-slate-700">Como devo usar?</span>
+                            <span class="font-bold text-slate-700">Como é feito o pagamento?</span>
                             <i data-feather="chevron-down" class="faq-icon"></i>
                         </button>
                         <div class="faq-content">
-                            <p data-i18n="faqa3">Recomenda-se seguir as instruções de dosagem diária indicadas na embalagem do produto.</p>
-                        </div>
-                    </div>
-                    <div class="faq-accordion-item">
-                        <button class="faq-trigger">
-                            <span data-i18n="faqq4" class="font-bold text-slate-700">É seguro?</span>
-                            <i data-feather="chevron-down" class="faq-icon"></i>
-                        </button>
-                        <div class="faq-content">
-                            <p data-i18n="faqa4">Sim. A fórmula utiliza ingredientes naturais amplamente reconhecidos e seguros para consumo.</p>
-                        </div>
-                    </div>
-                    <div class="faq-accordion-item">
-                        <button class="faq-trigger">
-                            <span data-i18n="faqq5" class="font-bold text-slate-700">Posso pagar na entrega?</span>
-                            <i data-feather="chevron-down" class="faq-icon"></i>
-                        </button>
-                        <div class="faq-content">
-                            <p data-i18n="faqa5">Sim. Oferecemos o método de pagamento no ato da entrega para sua total comodidade e segurança.</p>
+                            <p>Para sua segurança, o pagamento é feito diretamente ao estafeta no momento em que recebe a sua encomenda (Pagamento na Entrega).</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="mt-12 text-center">
-                    <a href="#order" class="bg-[#f04c1e] text-white px-10 py-4 rounded-xl font-black text-sm uppercase tracking-widest shadow-xl hover:scale-105 transition-transform inline-block" data-i18n="order_btn">ENCOMENDAR AGORA</a>
+                    <a href="#order" class="bg-[#f04c1e] text-white px-10 py-4 rounded-xl font-black text-sm uppercase tracking-widest shadow-xl hover:scale-105 transition-transform inline-block">PEDIR AGORA</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-slate-50 text-slate-400 py-12">
+    <!-- Footer Compliant -->
+    <footer class="bg-white text-slate-400 py-12 border-t border-slate-100">
         <div class="container mx-auto px-6 text-center">
-            <div class="max-w-3xl mx-auto mb-8 space-y-3">
-                <p data-i18n="disc1" class="text-[10px] font-bold italic opacity-60">*Os resultados individuais podem variar.</p>
-                <p data-i18n="disc2" class="text-[9px] opacity-60">Artronol é um suplemento alimentar. Não substitui um regime variado.</p>
+            <div class="max-w-4xl mx-auto mb-8 space-y-4">
+                <p class="text-[10px] font-bold italic">*AVISO: Os resultados apresentados são ilustrativos e podem variar consoante o organismo de cada indivíduo.</p>
+                <p class="text-[10px]"><strong>Artronol</strong> é um Suplemento Alimentar. Não deve ser utilizado como substituto de um regime alimentar variado e equilibrado e de um modo de vida saudável. Não exceder a toma diária recomendada. Manter fora do alcance das crianças.</p>
+                <p class="text-[10px]">As informações contidas nesta página são apenas para fins informativos e não substituem o aconselhamento médico profissional.</p>
             </div>
+            
+            <img src="images/imgi_1_logofix.png" alt="Logo" class="h-6 mx-auto mb-8 opacity-20 grayscale">
+            
             <div class="flex justify-center flex-wrap gap-x-6 gap-y-2 mb-8 text-[9px] font-bold uppercase tracking-widest text-slate-500">
-                <button data-i18n="link_shipping">Entregas</button>
-                <button data-i18n="link_terms">Termos</button>
-                <button data-i18n="link_privacy">Privacidade</button>
-                <button data-i18n="link_contact">Suporte</button>
+                <button>Política de Privacidade</button>
+                <button>Termos e Condições</button>
+                <button>Política de Cookies</button>
+                <button>Contacto de Suporte</button>
             </div>
-            <p class="text-[8px] opacity-40">&copy; 2026 ARTRONOL. TODOS OS DIREITOS RESERVADOS.</p>
+            <p class="text-[8px] opacity-40 uppercase tracking-tighter">&copy; 2026 ARTRONOL WELLNESS - TODOS OS DIREITOS RESERVADOS.</p>
         </div>
     </footer>
 
     <script>
+        // Tradução Automática
         const translations = {
             pt: {
-                nav1: "Início", nav2: "Sobre", nav3: "Dúvidas", order_btn: "ENCOMENDAR AGORA",
-                headline: "Recupere O Conforto Nos Seus Movimentos — Sem Complicações",
-                subheadline: "Se as suas articulações já não respondem como antes, esta pode ser uma forma simples de aliviar o desconforto no dia a dia.",
-                check1: "Ajuda a reduzir o desconforto e a rigidez", check2: "Apoia a mobilidade no dia a dia",
-                check3: "Fórmula com ingredientes selecionados", check4: "Uso simples, integrado na sua rotina",
-                region_label: "Escolha o seu país:", before: "Antes: €58", now: "Hoje: €29", limited: "(-50%)",
-                trust1: "Pagamento na Entrega", trust2: "Envio Rápido e Seguro",
-                reviews_title: "Mais De 50.000 Pessoas Já Testaram",
-                rev1_text: "\"Comecei a sentir menos rigidez logo nas primeiras semanas. Não é milagre, mas ajudou bastante.\"",
-                rev1_author: "— Carlos, 52 anos", rev2_text: "\"Uso por causa das dores no joelho. Sinto-me mais confortável para caminhar.\"",
-                rev2_author: "— Ana, 47 anos", rev3_text: "\"Gostei porque é simples de usar. Aos poucos fui sentindo diferença.\"",
-                rev3_author: "— Rui, 61 anos", q1: "Sente rigidez ao acordar?", q2: "As dores atrapalham as suas atividades?",
-                q3: "Evita certos movimentos por desconforto?", q_solution: "Não ignore estes sinais. Pequenas mudanças podem melhorar o seu conforto diário.",
+                nav1: "Início", nav3: "Dúvidas", order_btn: "PEDIR AGORA",
+                region_label: "Selecione o seu país de residência:",
+                before: "Preço base: €58", now: "Hoje: €29", limited: "Promoção -50%",
                 faq_title: "Perguntas Frequentes",
-                faqq1: "O Artronol substitui medicamentos?", faqa1: "Não. É um suplemento alimentar que pode complementar a sua rotina saudável.",
-                faqq2: "Em quanto tempo posso notar diferença?", faqa2: "Os resultados variam entre indivíduos, mas muitos utilizadores relatam melhorias nas primeiras semanas.",
-                faqq3: "Como devo usar?", faqa3: "Recomenda-se seguir as instruções de dosagem diária indicadas na embalagem do produto.",
-                faqq4: "É seguro?", faqa4: "Sim. A fórmula utiliza ingredientes naturais amplamente reconhecidos e seguros para consumo.",
-                faqq5: "Posso pagar na entrega?", faqa5: "Sim. Oferecemos o método de pagamento no ato da entrega para sua total comodidade e segurança.",
-                link_shipping: "Entregas", link_terms: "Termos", link_privacy: "Privacidade", link_contact: "Suporte"
             },
             es: {
-                nav1: "Inicio", nav2: "Sobre", nav3: "Dudas", order_btn: "PEDIR AHORA",
-                headline: "Recupere el Confort en sus Movimientos — Sin Complicaciones",
-                subheadline: "Si sus articulaciones ya no responden como antes, esta puede ser una forma sencilla de aliviar las molestias diarias.",
-                check1: "Ayuda a reducir las molestias y la rigidez", check2: "Apoya la movilidad diaria",
-                check3: "Fórmula con ingredientes seleccionados", check4: "Uso sencillo, integrado en su rutina",
-                region_label: "Elija su país:", before: "Antes: €58", now: "Hoy: €29", limited: "(-50%)",
-                trust1: "Pago contra Entrega", trust2: "Envío Rápido y Seguro",
-                reviews_title: "Más de 50.000 Personas ya lo han Probado",
-                rev1_text: "\"Empecé a sentir menos rigidez en las primeras semanas. Ayudó mucho en mi día a día.\"",
-                rev1_author: "— Carlos, 52 años", rev2_text: "\"Lo uso para el dolor de rodilla. Me siento más cómoda al caminar.\"",
-                rev2_author: "— Ana, 47 años", rev3_text: "\"Me gustó por su sencillez. Poco a poco noté la diferencia.\"",
-                rev3_author: "— Rui, 61 anos", q1: "¿Siente rigidez al despertar?", q2: "¿Los dolores interrumpen sus actividades?",
-                q3: "¿Evita movimientos por incomodidad?", q_solution: "No ignore estas señales. Pequeños cambios mejoran su confort diario.",
+                nav1: "Inicio", nav3: "Dudas", order_btn: "PEDIR AHORA",
+                region_label: "Seleccione su país de residencia:",
+                before: "Precio base: €58", now: "Hoy: €29", limited: "Promoción -50%",
                 faq_title: "Preguntas Frecuentes",
-                faqq1: "¿Artronol sustituye medicamentos?", faqa1: "No. Es un suplemento que complementa su rutina diaria saludable.",
-                faqq2: "¿Cuánto tiempo para notar diferencia?", faqa2: "Los resultados varían, pero muchos reportan mejoras en las primeras semanas.",
-                faqq3: "¿Cómo usar?", faqa3: "Se recomienda seguir las instrucciones de dosificación diaria indicadas en el envase.",
-                faqq4: "¿Es seguro?", faqa4: "La fórmula utiliza ingredientes naturales seguros para el consumo.",
-                faqq5: "¿Pago al recibir?", faqa5: "Sí. Ofrecemos pago contra reembolso para su total seguridad.",
-                link_shipping: "Envíos", link_terms: "Términos", link_privacy: "Privacidad", link_contact: "Soporte"
             }
         };
 
         function applyLanguage() {
             const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
-            let lang = 'pt';
-            if (userLang.startsWith('es')) lang = 'es';
+            let lang = userLang.startsWith('es') ? 'es' : 'pt';
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 if (translations[lang][key]) { el.innerText = translations[lang][key]; }

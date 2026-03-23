@@ -109,7 +109,7 @@
             color: #64748b;
             font-size: 0.95rem;
         }
-        .faq-accordion-item.active .faq-content { max-height: 200px; padding-bottom: 1.25rem; }
+        .faq-accordion-item.active .faq-content { max-height: 250px; padding-bottom: 1.25rem; }
         .faq-accordion-item.active .faq-icon { transform: rotate(180deg); }
         .faq-icon { transition: transform 0.3s; color: var(--brand-main); width: 18px; }
 
@@ -160,8 +160,8 @@
                     
                     <div class="reveal active text-center lg:text-left">
                         <div class="inline-flex items-center gap-2 bg-[#44B4C1]/10 text-[#44B4C1] px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-6">
-                            <i data-feather="info" class="w-3 h-3"></i> 
-                            Suporte Articular Natural
+                            <i data-feather="truck" class="w-3 h-3"></i> 
+                            Expedição Prioritária em 48h
                         </div>
                         <h1 data-i18n="headline" class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-[1.1] text-slate-800">
                             Recupere O Conforto Nos Seus Movimentos — Sem Complicações
@@ -215,7 +215,10 @@
                                 
                                 <div class="mt-4 flex flex-col gap-2">
                                     <div class="flex items-center gap-2 text-[9px] font-bold text-slate-400 uppercase">
-                                        <i data-feather="truck" class="w-3 h-3 text-[#44B4C1]"></i> Pagamento no ato da entrega
+                                        <i data-feather="truck" class="w-3 h-3 text-[#44B4C1]"></i> <span data-i18n="trust2">Envio Rápido em 48h</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-[9px] font-bold text-slate-400 uppercase">
+                                        <i data-feather="credit-card" class="w-3 h-3 text-[#44B4C1]"></i> Pagamento no ato da entrega
                                     </div>
                                     <div class="flex items-center gap-2 text-[9px] font-bold text-slate-400 uppercase italic">
                                         *Os resultados podem variar de pessoa para pessoa.
@@ -263,31 +266,54 @@
             <div class="container mx-auto px-6 max-w-2xl">
                 <h2 data-i18n="faq_title" class="text-3xl font-black text-center mb-10 text-slate-800">Perguntas Frequentes</h2>
                 <div class="space-y-1 bg-white rounded-2xl p-4 shadow-sm">
+                    <!-- Item 1 -->
                     <div class="faq-accordion-item">
                         <button class="faq-trigger">
-                            <span class="font-bold text-slate-700">O Artronol é um medicamento?</span>
+                            <span data-i18n="faqq1" class="font-bold text-slate-700">O Artronol substitui medicamentos?</span>
                             <i data-feather="chevron-down" class="faq-icon"></i>
                         </button>
                         <div class="faq-content">
-                            <p>Não. <strong>Artronol</strong> é um suplemento alimentar. Não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença.</p>
+                            <p data-i18n="faqa1">Não. Artronol é um suplemento alimentar que pode complementar a sua rotina saudável. Não se destina a substituir tratamentos prescritos por médicos.</p>
                         </div>
                     </div>
+                    <!-- Item 2 -->
                     <div class="faq-accordion-item">
                         <button class="faq-trigger">
-                            <span class="font-bold text-slate-700">Quando noto os primeiros resultados?</span>
+                            <span data-i18n="faqq2" class="font-bold text-slate-700">Em quanto tempo posso notar diferença?</span>
                             <i data-feather="chevron-down" class="faq-icon"></i>
                         </button>
                         <div class="faq-content">
-                            <p>Os resultados variam. Muitos utilizadores reportam uma sensação de maior conforto após as primeiras semanas de uso contínuo de <strong>Artronol</strong>.</p>
+                            <p data-i18n="faqa2">Os resultados variam consoante o organismo, mas muitos utilizadores relatam uma sensação de maior conforto após as primeiras semanas de uso contínuo.</p>
                         </div>
                     </div>
+                    <!-- Item 3 -->
                     <div class="faq-accordion-item">
                         <button class="faq-trigger">
-                            <span class="font-bold text-slate-700">Como é feito o pagamento?</span>
+                            <span data-i18n="faqq3" class="font-bold text-slate-700">Como devo usar?</span>
                             <i data-feather="chevron-down" class="faq-icon"></i>
                         </button>
                         <div class="faq-content">
-                            <p>Para sua segurança, o pagamento é feito diretamente ao estafeta no momento em que recebe a sua encomenda (Pagamento na Entrega).</p>
+                            <p data-i18n="faqa3">Recomenda-se seguir rigorosamente as instruções de dosagem diária indicadas na embalagem para obter os melhores benefícios.</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-trigger">
+                            <span data-i18n="faqq4" class="font-bold text-slate-700">É seguro?</span>
+                            <i data-feather="chevron-down" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p data-i18n="faqa4">Sim. A fórmula de Artronol utiliza ingredientes naturais selecionados, amplamente reconhecidos pela sua segurança e eficácia como suplemento.</p>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-trigger">
+                            <span data-i18n="faqq5" class="font-bold text-slate-700">Posso pagar na entrega?</span>
+                            <i data-feather="chevron-down" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p data-i18n="faqa5">Sim. Para sua total segurança, o pagamento é feito diretamente ao estafeta apenas no momento em que recebe a sua encomenda.</p>
                         </div>
                     </div>
                 </div>
@@ -327,12 +353,34 @@
                 region_label: "Selecione o seu país de residência:",
                 before: "Preço base: €58", now: "Hoje: €29", limited: "Promoção -50%",
                 faq_title: "Perguntas Frequentes",
+                trust2: "Envio Rápido em 48h",
+                faqq1: "O Artronol substitui medicamentos?",
+                faqa1: "Não. Artronol é um suplemento alimentar que pode complementar a sua rotina saudável. Não se destina a substituir tratamentos prescritos por médicos.",
+                faqq2: "Em quanto tempo posso notar diferença?",
+                faqa2: "Os resultados variam consoante o organismo, mas muitos utilizadores relatam uma sensação de maior conforto após as primeiras semanas de uso contínuo.",
+                faqq3: "Como devo usar?",
+                faqa3: "Recomenda-se seguir rigorosamente as instruções de dosagem diária indicadas na embalagem para obter os melhores benefícios.",
+                faqq4: "É seguro?",
+                faqa4: "Sim. A fórmula de Artronol utiliza ingredientes naturais selecionados, amplamente reconhecidos pela sua segurança e eficácia como suplemento.",
+                faqq5: "Posso pagar na entrega?",
+                faqa5: "Sim. Para sua total segurança, o pagamento é feito diretamente ao estafeta apenas no momento em que recebe a sua encomenda."
             },
             es: {
                 nav1: "Inicio", nav3: "Dudas", order_btn: "PEDIR AHORA",
                 region_label: "Seleccione su país de residencia:",
                 before: "Precio base: €58", now: "Hoy: €29", limited: "Promoción -50%",
                 faq_title: "Preguntas Frecuentes",
+                trust2: "Envío Rápido en 48h",
+                faqq1: "¿Sustituye a los medicamentos?",
+                faqa1: "No. Artronol es un suplemento alimenticio que puede complementar su rutina saludable. No sustituye a los tratamientos médicos.",
+                faqq2: "¿Cuánto tiempo para notar la diferencia?",
+                faqa2: "Los resultados varían, pero muchos usuarios reportan una mejora en el confort articular tras las primeras semanas.",
+                faqq3: "¿Cómo debo usarlo?",
+                faqa3: "Siga las instrucciones de dosificación diaria que figuran en el envase para obtener los mejores resultados.",
+                faqq4: "¿Es seguro?",
+                faqa4: "Sí. La fórmula de Artronol utiliza ingredientes naturales seguros y eficaces.",
+                faqq5: "¿Puedo pagar al recibir?",
+                faqa5: "Sí. Para su seguridad, el pago se realiza directamente al transportista en el momento de la entrega."
             }
         };
 

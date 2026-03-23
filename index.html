@@ -101,20 +101,6 @@
     }
     </script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Artronol",
-      "url": "https://www.get-artronol.shop/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.get-artronol.shop/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-
     <style>
         :root {
             --brand-main: #44B4C1; 
@@ -161,9 +147,10 @@
             max-width: 360px;
         }
 
+        /* Ajuste de Tamanho dos Botões (Responsivo) */
         .destination-btn {
             position: relative;
-            height: 95px;
+            height: 95px; /* Altura Desktop */
             border-radius: 1rem;
             display: flex;
             align-items: center;
@@ -171,6 +158,19 @@
             padding: 0 1.5rem;
             transition: all 0.2s ease;
             margin-bottom: 0.75rem;
+        }
+
+        @media (max-width: 640px) {
+            .destination-btn {
+                height: 70px; /* Altura Mobile mais elegante */
+                padding: 0 1.25rem;
+            }
+            .destination-btn span {
+                font-size: 1.125rem !important; /* text-lg em vez de text-xl */
+            }
+            .flag-small {
+                width: 36px !important; /* Bandeira menor no mobile */
+            }
         }
 
         .destination-btn.pt { background-color: #e35a3a; }
@@ -454,7 +454,7 @@
                 faqq1: "¿Sustituye a los medicamentos?",
                 faqa1: "No. Artronol es un suplemento alimenticio que puede complementar su rutina saludable. No sustituye a los tratamientos médicos.",
                 faqq2: "¿Cuánto tiempo para notar la diferencia?",
-                faqa2: "Los resultados varían, pero muchos usuarios reportan una mejora en el confort articular tras las primeras semanas.",
+                faqa2: "Los resultados varían, mas muchos usuarios reportan una mejora en el confort articular tras las primeras semanas.",
                 faqq3: "¿Como debo usarlo?",
                 faqa3: "Se recomienda seguir estrictamente las instrucciones de dosificación diaria que figuran en el envase para obtener los melhores beneficios.",
                 faqq5: "¿Puedo pagar al recibir?",
